@@ -48,10 +48,10 @@ namespace learn_c___in_cs
         public byte tempCritKill;
         public int ZLeft = 0;
 
-        public IntPtr PlayerBase = (IntPtr)0x10888578;
-        public IntPtr CMDBufferBase = (IntPtr)0x120ECA40;
-        public IntPtr XPScaleBase = (IntPtr)0x10494470; //instant ban depuis la version 1.8.0
-        //public IntPtr TimeScaleBase = (IntPtr)0xFB85514;
+        public IntPtr PlayerBase = (IntPtr)0xFFE5D78;
+        public IntPtr CMDBufferBase = (IntPtr)0x1184CA70;
+        public IntPtr XPScaleBase = (IntPtr)0x1000DD70; //instant ban depuis la version 1.8.0
+        //public IntPtr TimeScaleBase = (IntPtr)0xF94C794;
 
         public IntPtr PlayerCompPtr, PlayerPedPtr, ZMGlobalBase, ZMBotBase, ZMBotListBase;
 
@@ -105,11 +105,11 @@ namespace learn_c___in_cs
         {
             if (godmodCheck.Checked)
             {
-                consoleOut("GODMOD ON");
+                consoleOut("GODMODE ON");
             }
             else
             {
-                consoleOut("GODMOD OFF");
+                consoleOut("GODMODE OFF");
             }
         }
 
@@ -170,8 +170,8 @@ namespace learn_c___in_cs
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            consoleOut("By TheGeogeo#2845");
-            consoleOut("WORK IN 1.9.3");
+            consoleOut("By TheGeogeo#2845, updated by zakary#9255");
+            consoleOut("1.9.7");
             tpZombiT = new Thread(TpZombie) { IsBackground = true };
             tpZombiT.Start();
             if (!backgroundWorker1.IsBusy) backgroundWorker1.RunWorkerAsync();
@@ -250,7 +250,7 @@ namespace learn_c___in_cs
                         freezeBoxCheck.Enabled = false;
                         reviveFarBtn.Enabled = false;
 
-                        //activeXPCheck.Enabled = true;
+                        activeXPCheck.Enabled = true;
 
                         godmodCheck.Checked = false;
                         munInfCheck.Checked = false;
@@ -355,7 +355,7 @@ namespace learn_c___in_cs
                     if (!verif && c != 6)
                     {
                         verif = true;
-                        consoleOut("CARE ALL FEATURE DON'T WORK!!!");
+                        consoleOut("Caution, some freatures will not work!");
                     }
 
                     byte[] _tempBufferName = new byte[13];
@@ -494,7 +494,7 @@ namespace learn_c___in_cs
                         allCritKill.Enabled = true;
                         autoFireCheck.Enabled = true;
 
-                        //activeXPCheck.Enabled = true;
+                        activeXPCheck.Enabled = true;
 
                         cmdBufferInput.Enabled = true;
                         cmdBufferBtn.Enabled = true;
@@ -578,24 +578,24 @@ namespace learn_c___in_cs
             if (activeXPCheck.Checked)
             {
                 xpPlayerBar.Enabled = true;
-                xpWeaponBar.Enabled = true;
+               // xpWeaponBar.Enabled = true;
             }
             else
             {
                 xpPlayerBar.Enabled = false;
-                xpWeaponBar.Enabled = false;
+              //  xpWeaponBar.Enabled = false;
             }
         }
 
         private void xpPlayerBar_Scroll(object sender, EventArgs e)
         {
-            /*byte[] tBuff = new byte[4];
+            byte[] tBuff = new byte[4];
             Buffer.BlockCopy(BitConverter.GetBytes((float)xpPlayerBar.Value), 0, tBuff, 0, 4);
             xpPlayerLabel.Text = BitConverter.ToSingle(tBuff, 0).ToString();
             cwapi.WriteProcessMemory(hProc, (IntPtr)(baseAddress.ToInt64() + XPScaleBase.ToInt64()) + PlayerXP, tBuff, 4, out _);
             cwapi.WriteProcessMemory(hProc, (IntPtr)(baseAddress.ToInt64() + XPScaleBase.ToInt64()) + PlayerXP2, tBuff, 4, out _);
             cwapi.ReadProcessMemory(hProc, (IntPtr)(baseAddress.ToInt64() + XPScaleBase.ToInt64()) + PlayerXP, tBuff, 4, out _);
-            xpWeaponLabel.Text = BitConverter.ToSingle(tBuff, 0).ToString();*/
+            xpWeaponLabel.Text = BitConverter.ToSingle(tBuff, 0).ToString();
         }
 
         private void xpWeaponBar_Scroll(object sender, EventArgs e)

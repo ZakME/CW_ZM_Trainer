@@ -149,10 +149,10 @@ namespace learn_c___in_cs
             this.godmodCheck.Enabled = false;
             this.godmodCheck.Location = new System.Drawing.Point(8, 20);
             this.godmodCheck.Margin = new System.Windows.Forms.Padding(4);
-            this.godmodCheck.Name = "godmodCheck";
+            this.godmodCheck.Name = "godmodeCheck";
             this.godmodCheck.Size = new System.Drawing.Size(81, 19);
             this.godmodCheck.TabIndex = 3;
-            this.godmodCheck.Text = "GODMOD";
+            this.godmodCheck.Text = "GODMODE";
             this.godmodCheck.UseVisualStyleBackColor = false;
             this.godmodCheck.CheckedChanged += new System.EventHandler(this.godmodCheck_CheckedChanged);
             // 
@@ -169,7 +169,7 @@ namespace learn_c___in_cs
             this.munInfCheck.Name = "munInfCheck";
             this.munInfCheck.Size = new System.Drawing.Size(78, 19);
             this.munInfCheck.TabIndex = 4;
-            this.munInfCheck.Text = "∞ AMMO";
+            this.munInfCheck.Text = "INF AMMO";
             this.munInfCheck.UseVisualStyleBackColor = true;
             // 
             // moneyInfCheck
@@ -181,7 +181,7 @@ namespace learn_c___in_cs
             this.moneyInfCheck.Name = "moneyInfCheck";
             this.moneyInfCheck.Size = new System.Drawing.Size(82, 19);
             this.moneyInfCheck.TabIndex = 5;
-            this.moneyInfCheck.Text = "∞ MONEY";
+            this.moneyInfCheck.Text = "INF MONEY";
             this.moneyInfCheck.UseVisualStyleBackColor = true;
             // 
             // rapifFirecheck
@@ -344,7 +344,7 @@ namespace learn_c___in_cs
             this.tpZombiCheck.Name = "tpZombiCheck";
             this.tpZombiCheck.Size = new System.Drawing.Size(144, 19);
             this.tpZombiCheck.TabIndex = 16;
-            this.tpZombiCheck.Text = "SPAWN ON CURSOR";
+            this.tpZombiCheck.Text = "SPAWN ON CROSSHAIR";
             this.tpZombiCheck.UseVisualStyleBackColor = true;
             this.tpZombiCheck.CheckedChanged += new System.EventHandler(this.tpZombiCheck_CheckedChanged);
             // 
@@ -417,7 +417,7 @@ namespace learn_c___in_cs
             this.activeXPCheck.Name = "activeXPCheck";
             this.activeXPCheck.Size = new System.Drawing.Size(141, 19);
             this.activeXPCheck.TabIndex = 19;
-            this.activeXPCheck.Text = "ACTIVE TRACKBARS";
+            this.activeXPCheck.Text = "ACTIVATE XPMULTI";
             this.activeXPCheck.UseVisualStyleBackColor = true;
             this.activeXPCheck.CheckedChanged += new System.EventHandler(this.activeXPCheck_CheckedChanged);
             // 
@@ -513,7 +513,7 @@ namespace learn_c___in_cs
             this.godmodeAllCheck.Name = "godmodeAllCheck";
             this.godmodeAllCheck.Size = new System.Drawing.Size(81, 19);
             this.godmodeAllCheck.TabIndex = 26;
-            this.godmodeAllCheck.Text = "GODMOD";
+            this.godmodeAllCheck.Text = "GODMODE";
             this.godmodeAllCheck.UseVisualStyleBackColor = true;
             this.godmodeAllCheck.CheckedChanged += new System.EventHandler(this.godmodeAllCheck_CheckedChanged);
             // 
@@ -526,7 +526,7 @@ namespace learn_c___in_cs
             this.munitionInfAllCheck.Name = "munitionInfAllCheck";
             this.munitionInfAllCheck.Size = new System.Drawing.Size(78, 19);
             this.munitionInfAllCheck.TabIndex = 27;
-            this.munitionInfAllCheck.Text = "∞ AMMO";
+            this.munitionInfAllCheck.Text = "INF AMMO";
             this.munitionInfAllCheck.UseVisualStyleBackColor = true;
             // 
             // tpZombieSavePointCheck
@@ -660,7 +660,7 @@ namespace learn_c___in_cs
             this.infMoneyAllCheck.Name = "infMoneyAllCheck";
             this.infMoneyAllCheck.Size = new System.Drawing.Size(82, 19);
             this.infMoneyAllCheck.TabIndex = 28;
-            this.infMoneyAllCheck.Text = "∞ MONEY";
+            this.infMoneyAllCheck.Text = "INF MONEY";
             this.infMoneyAllCheck.UseVisualStyleBackColor = true;
             // 
             // groupBox5
@@ -1018,7 +1018,7 @@ namespace learn_c___in_cs
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "MainForm";
-            this.Text = "RECETTES FONDANTES ET CROQUANTES | PAR CYRIL LIGNAC";
+            this.Text = "CW 1x9x7";
             this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.moveSpeedTrackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xpPlayerBar)).EndInit();
