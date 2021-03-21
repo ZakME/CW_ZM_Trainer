@@ -51,7 +51,7 @@ namespace learn_c___in_cs
         public IntPtr PlayerBase = (IntPtr)0xFFE5D78;
         public IntPtr CMDBufferBase = (IntPtr)0x1184CA70;
         public IntPtr XPScaleBase = (IntPtr)0x1000DD70; //instant ban depuis la version 1.8.0
-        //public IntPtr TimeScaleBase = (IntPtr)0xF94C794;
+        public IntPtr TimeScaleBase = (IntPtr)0xF093F94;
 
         public IntPtr PlayerCompPtr, PlayerPedPtr, ZMGlobalBase, ZMBotBase, ZMBotListBase;
 
